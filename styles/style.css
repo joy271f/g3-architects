@@ -320,3 +320,102 @@ footer P{
 /*------------------
 @media Query 
 ------------------- */
+
+@media only screen and (max-width: 576px) {
+
+    /* Nav Start */
+    header nav{
+        flex-direction: column;
+    }
+
+    /* Image gallery start */
+    .image-gallery, .container{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .image-container{
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .image-items{
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+
+    .image-item-text{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .image-text-pera{
+        padding: 0 50px 0 0;
+    }
+    /* Image gallery end */
+
+    /* Experience Section */
+    .hide-btn{
+        display: none;
+    }
+
+    .ex-main-div {
+            flex-direction: column-reverse;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-top: 50px;
+    }
+    .ex-img{
+        width: 70%;
+    }
+
+    .ex-feature{
+        margin-top: 40px;
+        width: 100%;
+    }
+    .info-card{
+        width: 100%;
+        height: 50vh;
+    }
+    /* Experience Area end */
+
+
+
+    /* Facts Section Start */
+    .fact-text{
+        margin-top: 100px;
+    }   
+    .fact-description{
+        padding-right: 0;
+    }
+
+    .fact-items{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fact-border{
+        width: 100%;
+        height: 40vh;
+        border: none;
+    }
+    /* Facts Section end */
+
+    /* sponspors section start  */
+    .sponspors-text p {
+        padding: 0;
+    }
+
+    .sponspors-items{
+        padding: 0 20px;   
+    }
+    /* sponspors section end  */
+
+
+    /* footer start */
+    footer P {
+        padding-top: 20px;
+    }
+    /* footer end */
+}
